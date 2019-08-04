@@ -13,7 +13,7 @@ const Image = props => (
               name
               childImageSharp {
                 fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -29,7 +29,15 @@ const Image = props => (
         return null
       }
 
-      return <Img alt={props.alt} fluid={image.node.childImageSharp.fluid} />
+      return (
+        <div className="flex align-center justify-center">
+          <Img
+            className="flex-1 max-w-lg mt-10"
+            alt={props.alt}
+            fluid={image.node.childImageSharp.fluid}
+          />
+        </div>
+      )
     }}
   />
 )

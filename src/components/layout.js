@@ -1,18 +1,15 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = props => {
+  const [inputValue, setInputValue] = useState(false)
+  const { children } = props
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,22 +22,22 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
+        id="background"
+        className={`flex flex-col justify-between min-h-screen`}
+        onClick={() => setInputValue(false)}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Header siteTitle={data.site.siteMetadata.title} />
+
+        <div className="flex flex-1 p-6 justify-center mb-16">
+          <main className="flex flex-1 max-w-4xl justify-center">
+            {children}
+          </main>
+        </div>
+        <div className="absolute min-h-screen " id="pageTransition" />
       </div>
+
+      <Footer inputValue={inputValue} setInputValue={setInputValue} />
     </>
   )
 }
