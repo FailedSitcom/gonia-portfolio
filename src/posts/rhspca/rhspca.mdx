@@ -4,5 +4,122 @@ order: 1
 title: "UX audit for RHSPCA"
 featuredImage: ../images/featureAudit.png
 ---
+import BlogTitle from "../post-components/BlogTitle"
+import BlogColumn from "../post-components/BlogColumn"
+import ColumnHeading from "../post-components/ColumnHeading"
+import ColumnText from "../post-components/ColumnText"
+import Image from "../post-components/Image"
 
-<h1>Hello, world!</h1>
+<div className="sm:px-4 flex flex-col">
+  
+<BlogTitle>UX audit for RHSPCA</BlogTitle>
+
+<BlogColumn>
+  <ColumnHeading>Cause</ColumnHeading>
+  <ColumnText>
+    <p>
+      Need to figure out the description here.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<BlogColumn>
+  <ColumnHeading>Stating point</ColumnHeading>
+  <ColumnText>
+    <p>
+      Rockingham-Harrisonburg SPCA needed help with performing an <b>audit</b> of their current website, alongside providing <b>recommendations for improvements</b>. RHSPCA is a well-established organisation, helping its local community and engaging with it through the social media. The website itself (code, structure) hasn't been fundamentally updated since 2007. The main <b>goal</b> was to provide RHSPCA with clear guidelines which would help them to build a more user-friendly website, better for their visitors and members of staff in charge of its maintenance.
+      <br />
+      I followed Joe Natoli's UX Audit Cheat Sheet as a general guide for the auditing process. It revealed a number of issues related to presentation and content itself.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<BlogColumn>
+  <ColumnHeading>Main issues identified by the audit</ColumnHeading>
+  <ColumnText>
+    <p>
+      - Website is unresponsive and difficult to find on devices with smaller viewports.
+      <br />- Navigation and labelling are inconsistent.
+      <br />- Specific information is difficult to locate.
+      <br />- No search function is provided.
+      <br />- Code is messy and tables are used to organise content.
+      <br />- Visual hierarchy could be better.
+      <br />- Large blocks of written content with no subheadings and formatting are difficult to scan and read.
+      <br />- No alt tags for images and videos.
+      <br />- There are broken links and sections without content.
+      <br />- No sitemap provided for search engines.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<BlogColumn>
+  <ColumnHeading>Content and users</ColumnHeading>
+  <ColumnText>
+    <p>
+      I followed up by creating <b>content inventory spreadsheet</b> to establish connections between different sections and locate main problem areas. <b>Closed card sorting</b> was employed, to help with reorganising existing content into fewer categories. It resulted in creating basic foundations for the structure users could understand and navigate better.
+      <br />
+      At the same time, I needed to find out main reasons which brought people to RHSPCA in order to establish <b>user needs</b> and <b>goals</b>. This information was summarised through <b>personas</b>.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<Image filename="rhspca.png" />
+<Image filename="rhspca-2.png" />
+<Image filename="rhspca-3.png" />
+<Image filename="rhspca-4.png" />
+
+<BlogColumn>
+  <ColumnHeading>Define site objectives</ColumnHeading>
+  <ColumnText>
+    <p>
+      - To promote RHSPCA values.
+      <br />- To include information relevant for the users.
+      <br />- To actively encourage help (adopting, donating, volunteering).
+      <br />- To present the range of services fully.
+      <br />- To be easy to use and navigate.
+      <br />- To be up to date.
+      <br />- To be easy to find.
+      <br />- To promote RHSPCA in the local community, raising awareness among the potential sponsors.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<BlogColumn>
+  <ColumnHeading>Define functionality specs</ColumnHeading>
+  <ColumnText>
+    <p>
+      - Include Search option to help with sifting through the content quickly.
+      <br />- Break down long text entries into labelled sections and paragraphs.
+      <br />- Ensure clear CTAs for crucial elements on the site.
+      <br />- Include breadcrumbs and tags for easier navigation.
+      <br />- Responsive.
+      <br />- CMS for ease of maintenance.
+      <br />- Provide sitemap, keywords to ensure good SEO scores.
+      <br />- TIntegrate Facebook and other social media account updates into the blog feed.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<BlogColumn>
+  <ColumnHeading>Wireframe</ColumnHeading>
+  <ColumnText>
+    <p>
+      Knowing results of card sorting, user expectations, site objectives and functionality specs helped to establish <b>site structure</b> and priorities for the <b>navigation</b>.
+      <br />
+      The next step was to generate <b>wireframes</b>.
+      <br />
+      I decided to break the navigation down into groups of three. General Information (About Us, F.A.Q. and Contact) belonging in the header, Action Group (Adopt, Volunteer and Support) taking hero component's spot, with Knowledge Group (Humane Education, Classes and Workshops, and Services) placed below. The Current Group (Events, Forms and Blog), placed above the footer, holds categories with regularly updated content.
+    </p>
+     </ColumnText>
+</BlogColumn>
+
+<Image filename="rhspca-5.png" />
+
+<BlogColumn>
+  <ColumnHeading>Summary</ColumnHeading>
+  <ColumnText>
+    <p>
+      This project was an invaluable deep dive into the world of UX for me. Apart from being able to apply different tools and learnings to the process, I've also learned how to communicate with a client and work remotely in an effective way (even when in different timezones). 
+    </p>
+     </ColumnText>
+</BlogColumn>
