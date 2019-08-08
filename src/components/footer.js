@@ -12,7 +12,7 @@ const Footer = props => {
       onClick={() => props.setInputValue(!props.inputValue)}
     >
       <div
-        className={`absolute bottom-0 w-full bg-white rounded-t-lg p-5 max-w-4xl m-0 overflow-hidden h-${
+        className={`absolute bottom-0 w-full bg-white rounded-t-lg p-5 max-w-4xl m-0 overflow-hidden cursor-pointer h-${
           props.inputValue ? "auto" : "16"
         } sm:h-${
           props.inputValue ? "40" : "16"
