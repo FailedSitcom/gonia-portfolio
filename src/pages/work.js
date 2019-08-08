@@ -99,7 +99,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        allMdx {
+        allMdx(sort: { order: ASC, fields: [frontmatter___order] }) {
           edges {
             node {
               frontmatter {
