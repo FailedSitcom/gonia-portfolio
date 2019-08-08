@@ -30,13 +30,19 @@ const Image = props => (
       }
 
       return (
-        <div className="flex align-center justify-center">
-          <Img
-            className="flex-1 max-w-lg mt-10"
-            alt={props.alt}
-            fluid={image.node.childImageSharp.fluid}
-          />
-        </div>
+        <figure>
+          <div className="flex justify-center">
+            <Img
+              className="flex-1 max-w-lg mt-10"
+              alt={props.alt}
+              fluid={image.node.childImageSharp.fluid}
+            />
+          </div>
+
+          {props.alt ? (
+            <figcaption className="text-center text-sm">{props.alt}</figcaption>
+          ) : null}
+        </figure>
       )
     }}
   />

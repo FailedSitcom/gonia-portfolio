@@ -7,6 +7,7 @@ module.exports = {
       darkgray: "#EBEBEB",
       lightgray: "#FAFAFA",
       placeholder: "#D8D8D8",
+      textgray: "#212121",
       white: "#FFF",
       black: "#000",
     },

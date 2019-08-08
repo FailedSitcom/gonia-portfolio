@@ -24,7 +24,7 @@ const Layout = props => {
     <>
       <div
         id="background"
-        className={`flex flex-col justify-between min-h-screen`}
+        className={`flex flex-col justify-between min-h-screen text-textgray`}
         onClick={() => setInputValue(false)}
       >
         <Header siteTitle={data.site.siteMetadata.title} />

@@ -63,6 +63,14 @@ The scope of my skills also includes UI design, as well as product and project m
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-145197481-1",
+        anonymize: true,
+        respectDNT: false,
+      },
+    },
     `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
