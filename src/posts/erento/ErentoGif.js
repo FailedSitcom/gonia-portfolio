@@ -6,7 +6,7 @@ const ErentoGif = props => (
   <figure>
     <div className="flex justify-center">
       <div className="flex flex-1 justify-center my-5">
-        <img className="max-w-lg" src={gif} alt={props.alt} />
+        <img className="sm:max-w-lg" src={gif} alt={props.alt} />
       </div>
     </div>
 
