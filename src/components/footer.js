@@ -8,11 +8,11 @@ const Footer = props => {
   }
   return (
     <footer
-      className="flex justify-center relative mx-6 z-10"
+      className="bottom-0 fixed flex justify-center z-10 w-full"
       onClick={() => props.setInputValue(!props.inputValue)}
     >
       <div
-        className={`absolute bottom-0 w-full bg-white rounded-t-lg p-5 max-w-4xl m-0 overflow-hidden cursor-pointer h-${
+        className={`bottom-0 bg-white rounded-t-lg p-5 max-w-4xl mx-6 overflow-hidden w-full cursor-pointer h-${
           props.inputValue ? "auto" : "16"
         } sm:h-${
           props.inputValue ? "40" : "16"
