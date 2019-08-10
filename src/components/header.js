@@ -18,7 +18,7 @@ const Header = props => (
         <img src={logo} alt="Gonia Cholewa Logo" style={{ width: "43px" }} />
       </Link>
 
-      <div>
+      <div className="mt-3">
         <Link
           to="/about/"
           className="uppercase"

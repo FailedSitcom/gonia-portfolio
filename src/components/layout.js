@@ -29,7 +29,7 @@ const Layout = props => {
       >
         <Header siteTitle={data.site.siteMetadata.title} />
 
-        <div className="flex flex-1 p-6 justify-center mb-16">
+        <div className="flex flex-1 p-6 justify-center mb-24">
           <main className="flex flex-1 max-w-4xl justify-center">
             {children}
           </main>
