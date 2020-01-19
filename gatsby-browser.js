@@ -57,8 +57,6 @@ export const onRouteUpdate = ({ location }) => {
       )
       .attr("r", 10)
       .style("fill", "#dcf9f3")
-    // .style("stroke-width", 1)
-    // .style("stroke", "#b0c7c2")
 
     const t = d3
       .transition()
@@ -78,7 +76,6 @@ export const onRouteUpdate = ({ location }) => {
       .transition(t)
       .attr("r", 0)
       .transition(t)
-      // .style("stroke-width", 0)
       .style("stroke", "#dcf9f3")
 
     d3.selectAll(".dot-2")

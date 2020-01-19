@@ -72,6 +72,22 @@ The scope of my skills also includes UI design, as well as product and project m
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: false,
+        tailwind: true,
+        whitelist: [
+          "h-16",
+          "circle-transition",
+          "circle-group",
+          "dot",
+          "dot-2",
+        ],
+      },
+    },
+    `gatsby-plugin-preact`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

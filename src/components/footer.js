@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
 const Footer = props => {
@@ -14,8 +12,8 @@ const Footer = props => {
       <div
         className={`bottom-0 bg-white rounded-t-lg p-5 max-w-4xl mx-6 overflow-hidden w-full cursor-pointer h-${
           props.inputValue ? "auto" : "16"
-        } sm:h-${
-          props.inputValue ? "40" : "16"
+        } ${
+          props.inputValue ? "sm:h-40" : "sm:h-16"
         } shadow-2xl text-center transition-height`}
       >
         <span className="uppercase">Connect</span>
