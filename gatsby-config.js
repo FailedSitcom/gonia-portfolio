@@ -75,11 +75,12 @@ The scope of my skills also includes UI design, as well as product and project m
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true,
-        develop: false,
+        develop: true,
         tailwind: true,
         whitelist: [
-          "h-16",
+          "svgTransition",
+          "h-screen",
+          "w-screen",
           "circle-transition",
           "circle-group",
           "dot",
